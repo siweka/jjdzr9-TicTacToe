@@ -162,7 +162,7 @@ public class Game {
                     result = "X wins";
 
                 if (grid[i][0] == 'o')
-                    result = "O wins";
+                    result = "o wins";
             }
         }
 
@@ -173,7 +173,7 @@ public class Game {
                 if (grid[0][i] == 'x')
                     result = "X wins";
                 if (grid[0][i] == 'o')
-                    result = "O wins";
+                    result = "o wins";
             }
         }
 
@@ -181,9 +181,9 @@ public class Game {
 
         if ((grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2])) {
             if (grid[0][0] == 'x')
-                result = "X wins ";
+                result = "X wins";
             if (grid[0][0] == 'o')
-                result = "O wins";
+                result = "o wins";
         }
 
         //Diagonal check /
@@ -193,7 +193,7 @@ public class Game {
                 result = "X wins";
 
             if (grid[0][2] == 'o')
-                result = "O wins";
+                result = "o wins";
 
         }
 
@@ -207,8 +207,8 @@ public class Game {
             }
         }
         if (iloscPelnychPul == grid.length * grid.length && result.equals("None"))
-            result = "Tie! Play again";
-        // END Student
+            result = "tie";
+
         return result;
     }
 
